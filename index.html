@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;600&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Preview</title>
+</head>
+<body>
+    <!-- navication bar -->
+
+    <nav>
+        <div class="logo">
+            <img src="/images/ic-logo.svg" class="ic-logo" alt="ic-logo">
+            <h2 class="font--logo logo-font-size">COLMAR<span style=" color: #9b9b9b">ACADEMY</span></h2>
+        </div>
+        <ul class="menu--bar">
+
+            <img src="/images/ic-logo.svg" class="ic--mobile" alt="ic-logo">
+
+            <li class="menu--list">
+                <a href="#" class="menu--link">
+                    <img src="/images/ic-on-campus.svg" alt="ic-on-campus" class="ic--mobile">
+                    <span class="menu--name">On campus</span>
+                </a>
+            </li>
+            <li class="menu--list">
+                <a href="#" class="menu--link">
+                    <img src="/images/ic-online.svg" alt="ic-online" class="ic--mobile">
+                    <span class="menu--name">Online</span>
+                </a>
+            </li>
+            <li class="menu--list">
+                <a href="#" class="menu--link">
+                    <img src="/images/ic-company.svg" alt="ic-company" class="ic--mobile">
+                    <span class="menu--name">For companies</span>
+                </a>
+            </li>
+            <li class="menu--list">
+                <a href="#" class="menu--link">
+                    <img src="/images/ic-login.svg" alt="ic-on-campus" class="ic--mobile">
+                    <span class="menu--name">Sign in</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+<!-- ============================================================================ -->
+    
+    <!-- main section -->
+
+    <section class="main--contrainer">
+
+        <div class="main--banner">
+            <img src="/images/banner.jpg" alt="banner">
+        </div>
+
+        <div class="main--content">
+            <h1 class="h1-font-size">Learn something new everyday</h1>
+            <h3 class="h3-font-size">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+            <buttom class="main--content--btn btn">Start here</buttom>
+        </div>
+
+    </section>
+
+<!-- ============================================================================ -->
+
+    <!-- news section -->
+
+    <section class="news--contrainer">
+
+        <div class="news--highlight">
+            <div class="new--highlight--img">
+                <img src="/images/information-main.jpg" alt="information-main">
+                <h2 class="h2-font-size">It doesn't hurt to keep practicing</h2>
+                <p class="normal-font-size">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+                <p class="news--highlight--credit small-font-size">Emanuel,Sr Strategist at Hiring.com</p>
+            </div>
+        </div>
+
+        <div class="news--other">
+
+            <div class="news--other--list">
+                <div class="news--other--img">
+                    <img src="/images/information-orientation.jpg" alt="information-orientation" class="large--img">
+                    <img src="/images/information-orientation-mobile.jpg" alt="information-orientation-mobile" class="mobile--img">
+                </div>
+                <div class="news--other--content">
+                    <h3 class="news--other--title h3-font-size">Orientation date</h3>
+                    <p class="news--other--description normal-font-size">Tue 10/11 &Wed 10/12: 8am-3pm</p>
+                    <a href="#" class="read--more">Read more</a>
+                </div>
+            </div>
+
+            <div class="news--other--list">
+                <div class="news--other--img">
+                    <img src="/images/information-campus.jpg" alt="information-campus" class="large--img">
+                    <img src="/images/information-campus-mobile.jpg" alt="information-campus-mobile" class="mobile--img">
+                </div>
+                <div class="news--other--content">
+                    <h3 class="news--other--title h3-font-size">Our campus</h3>
+                    <p class="news--other--description normal-font-size">Find which campus is close by you</p>
+                    <a href="#" class="read--more">Read more</a>
+                </div>
+            </div>
+
+            <div class="news--other--list">
+                <div class="news--other--img">
+                    <img src="/images/information-guest-lecture.jpg" alt="information-guest-lecture" class="large--img">
+                    <img src="/images/information-guest-lecture-mobile.jpg" alt="information-guest-lecture-mobile" class="mobile--img">
+                </div>
+                <div class="news--other--content">
+                    <h3 class="news--other--title h3-font-size">Our guest lecture</h3>
+                    <p class="news--other--description normal-font-size">Join a keynote with Oliver Sack about music in medical treatment</p>
+                    <a href="#" class="read--more">Read more</a>
+                </div>
+            </div>
+            
+        </div>
+
+    </section>
+
+<!-- ============================================================================ -->
+
+    <!-- activity section -->
+
+    <section class="activity--contrainer">
+
+        <h2 class="h2-font-size">Start learning</h2>
+
+        <div class="activity--list">
+
+            <div onclick="toggle1()" class="activity--btn">
+                    <h3 class="activity--btn--name h3-font-size">Software engineering</h3>
+                </div>
+                <div class="activity--card" id="activityCard1">
+                    <div class="activity--img">
+                        <img src="/images/course-software.jpg" alt="course-software">
+                    </div>
+                    <div class="activity--content">
+                        <h3 class="activity--name h3-font-size">Software engineering</h3>
+                        <p class="activity--type normal-font-size">COURSES</p>
+                        <p class="activity--description normal-font-size">Web Development, Mobile Development, iOT, APls</p>
+                    </div>
+            </div>
+
+            <div onclick="toggle2()" class="activity--btn">
+                    <h3 class="activity--btn--name h3-font-size">Computer art</h3>
+                </div>
+                <div class="activity--card" id="activityCard2">
+                    <div class="activity--img">
+                        <img src="/images/course-computer-art.jpg" alt="course-computer-art">
+                    </div>
+                    <div class="activity--content">
+                        <h3 class="activity--name h3-font-size">Computer art</h3>
+                        <p class="activity--type normal-font-size">COURSES</p>
+                        <p class="activity--description normal-font-size">Imaging & Design, Motion Graphics & Visual Effects, Computer Animation</p>
+                    </div>
+            </div>
+
+
+            <div onclick="toggle3()" class="activity--btn">
+                <h3 class="activity--btn--name h3-font-size">Design</h3>
+            </div>
+            <div class="activity--card" id="activityCard3">
+                <div class="activity--img">
+                    <img src="/images/course-design.jpg" alt="course-design">
+                </div>
+                <div class="activity--content">
+                    <h3 class="activity--name h3-font-size">Design</h3>
+                    <p class="activity--type normal-font-size">COURSES</p>
+                    <p class="activity--description normal-font-size">User Experience Design, Use Reaearch, Visual Design</p>
+                </div>
+            </div>
+
+            <div onclick="toggle4()" class="activity--btn">
+                <h3 class="activity--btn--name h3-font-size">Data</h3>
+            </div>
+            <div class="activity--card" id="activityCard4">
+                <div class="activity--img">
+                    <img src="/images/course-data.jpg" alt="course-data">
+                </div>
+                <div class="activity--content">
+                    <h3 class="activity--name h3-font-size">Data</h3>
+                    <p class="activity--type normal-font-size">COURSES</p>
+                    <p class="activity--description normal-font-size">Data Science, Big Data, SQL, Data Visualization</p>
+                </div>
+            </div>
+
+            <div onclick="toggle5()" class="activity--btn">
+                <h3 class="activity--btn--name h3-font-size">Business</h3>
+            </div>
+            <div class="activity--card" id="activityCard5">
+                <div class="activity--img">
+                    <img src="/images/course-business.jpg" alt="course-business">
+                </div>
+                <div class="activity--content">
+                    <h3 class="activity--name h3-font-size">Business</h3>
+                    <p class="activity--type normal-font-size">COURSES</p>
+                    <p class="activity--description normal-font-size">Product Development, Business Development, Startup</p>
+                </div>
+            </div>
+
+            <div onclick="toggle6()" class="activity--btn">
+                <h3 class="activity--btn--name h3-font-size">Marketing</h3>
+            </div>
+            <div class="activity--card" id="activityCard6">
+                <div class="activity--img">
+                    <img src="/images/course-marketing.jpg" alt="course-marketing">
+                </div>
+                <div class="activity--content">
+                    <h3 class="activity--name h3-font-size">Marketing</h3>
+                    <p class="activity--type normal-font-size">COURSES</p>
+                    <p class="activity--description normal-font-size">Analytics, Content Marketing, Mobile Marketing</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+<!-- ============================================================================ -->
+
+    <!-- thesis section -->
+
+    <section class="thesis--contrainer">
+
+        <h2 class="thesis--title h2-font-size">Thesis exhibit</h2>
+
+        <div class="thesis--box">
+
+            <div class="thesis--highlight">
+
+                <div class="thesis--highlight--video">
+                    <video src="/videos/thesis.mp4" controls></video>
+                </div>
+
+                <div class="thesis--highlight--content">
+                    <h3 class="thesis--highlight--name h3-font-size">Reimagine urban</h3>
+                    <p class="thesis--highlight--description">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+                </div>
+
+            </div>
+
+                <div class="thesis--other">
+
+                    <div class="thesis--other--list">
+                        <div class="thesis--other--img">
+                            <img src="/images/thesis-fisma.jpg" alt="thesis-fisma">
+                        </div>
+                        <div class="thesis--other--content">
+                            <h3 class="thesis--other--name h3-font-size">Fisma: Design and Prototype</h3>
+                            <p class="thesis--other--description normal-font-size">Designer Showcase of new prototype product</p>
+                        </div>
+                    </div>
+
+                    <div class="thesis--other--list">
+                        <div class="thesis--other--img">
+                            <img src="/images/thesis-now-and-then.jpg" alt="thesis-now-and-then">
+                        </div>
+                        <div class="thesis--other--content">
+                            <h3 class="thesis--other--name h3-font-size">Now and then</h3>
+                            <p class="thesis--other--description normal-font-size">Research study about New York</p>
+                        </div>
+                    </div>
+
+                </div>
+
+        </div>
+
+    </section>
+
+
+<!-- ============================================================================ -->
+    <!-- footer scetion -->
+
+    <footer>
+        <p class="footer--copyrights normal-font-size">&copy; 2016 Colmar Acadermy. All rights reserved</p>
+
+        <ul class="footer--menu">
+            <li class="footer--link--list">
+                <a class="footer--link normal-font-size" href="#">Terms</a>
+            </li>
+            <li class="footer--link--list">
+                <a class="footer--link normal-font-size" href="#">Privacy</a>
+            </li>
+        </ul>
+
+    </footer>
+
+<!-- ============================================================================ -->
+
+<!-- <section>
+    <h2>Skills</h2>
+
+    <div class="skills_content skills__open">
+        <div onclick="toggleSkills()" class="skills__header">
+
+            <div>
+                <h1>Frontend Developer</h1>
+            </div>
+
+        </div>
+        <div class="skills__list">
+            <div class="title">
+                <h3>HTML</h3>
+                <span>90%</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="skills_content skills__close">
+        <div class="skills__header">
+
+            <div>
+                <h1>Frontend Developer2</h1>
+            </div>
+
+        </div>
+        <div class="skills__list">
+            <div class="title">
+                <h3>HTML</h3>
+                <span>90%</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="skills_content skills__close">
+        <div class="skills__header">
+
+            <div>
+                <h1>Frontend Developer3</h1>
+            </div>
+
+        </div>
+        <div class="skills__list">
+            <div class="title">
+                <h3>HTML</h3>
+                <span>90%</span>
+            </div>
+        </div>
+    </div>
+
+</section> -->
+
+</body>
+</html>
