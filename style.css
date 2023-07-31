@@ -7,10 +7,12 @@
 }
 
 body {
-    margin: auto;
     min-width: 750px;
+}
+
+main {
+    margin: auto;
     max-width: 1080px;
-    background-color: #f3f5f5;
 }
 
 /* font size */
@@ -58,7 +60,6 @@ li {
 a {
     text-decoration: none;
 }
-
 
 /* ============================================================================*/
 
@@ -588,19 +589,6 @@ footer {
 
 /* ============================================================================*/
 
-/* .skills__header {
-    background-color: red;
-    cursor: pointer;
 }
 
-.skills__close .skills__list {
-    height: 0;
-    overflow: hidden;
-}
 
-.skills__open .skills__list {
-    height: max-content;
-} */
-
-
-}
