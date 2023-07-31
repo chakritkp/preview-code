@@ -83,6 +83,7 @@ nav {
 .menu--bar {
     display: flex;
     flex-direction: row;
+    gap: 16px;
     align-content: center;
     padding-right: 24px;
 }
@@ -94,7 +95,7 @@ nav {
 }
 
 .menu--list {
-    padding-left: 16px;
+    /* padding-left: 16px; */
 }
 
 .ic--mobile{
